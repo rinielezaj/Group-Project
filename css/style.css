@@ -1,39 +1,36 @@
 body {
   margin: 0;
-  font-family: 'Noto Sans', sans-serif;
+  font-family: 'Franklin Gothic ATF', 'sans-serif';
   background-color: #fff;
   color: #fff;
 }
 
-/* Hero Section */
-.ea {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background: linear-gradient(90deg, #0a0f1a 0%, #1a2435 60%);
-  padding: 4rem 8%;
-  overflow: hidden;
+.ea{
+  
+  background-image: url(ea-fc.jpg);
+  padding-top: 150px;
+  width: 100%;
+  height: 540px;
+  left: 300px;
 }
 
 .ea-content {
   max-width: 50%;
 }
 
-.ea-logo {
-  width: 300px;
-  margin-bottom: 1rem;
+.ea h1{
+  margin: -100px;
+  margin-left: 5px;
+  color: white;
+  padding: 150px;
 }
 
-.ea-content h1 {
-  font-size: 2.5rem;
-  font-weight: 700;
-  margin: 0.5rem 0;
-}
-
-.ea-content p {
-  color: #cfd8e3;
-  line-height: 1.6;
-  margin-bottom: 1.5rem;
+.ea p{
+  margin-left: 50px;
+  margin-top: -125px;
+  padding-left: 150px;
+  color: white;
+  padding: 50px;
 }
 
 .btn {
@@ -46,6 +43,7 @@ body {
   cursor: pointer;
   font-weight: 700;
   transition: background 0.3s ease;
+  margin-left: 100px;
 }
 
 .btn:hover {
@@ -57,11 +55,11 @@ body {
   border-radius: 10px;
 }
 
-/* Games Carousel */
+
 .games-carousel {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  gap: 10px; /* space between images */
+  gap: 10px;
   padding: 0 20px;
   margin-top: 25px;
 }
@@ -87,13 +85,13 @@ body {
   height: auto;
   display: block;
   border-radius: 10px;
-  opacity: 0.8; /* start slightly transparent */
+  opacity: 0.8;
   transition: opacity 0.4s ease, transform 0.3s ease;
 }
 
 .game-card:hover img {
   opacity: 1; /* fully visible on hover */
-  transform: scale(1.03); /* subtle zoom for depth (optional) */
+  transform: scale(1.03); 
 }
 
 .game-card:hover {
@@ -185,8 +183,8 @@ body {
 .hero {
   position: relative;
   width: 100%;
-  height: 900px; /* 1920x900 section */
-  background-image: url('background.jpg'); /* use your own background image */
+  height: 900px;
+  background-image: url('background.jpg');
   background-size: cover;
   background-position: center;
   display: flex;
@@ -195,25 +193,16 @@ body {
   overflow: hidden;
 }
 
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.6);
-  z-index: 1;
-}
 
 .content {
-  position: relative;
-  z-index: 2;
-  text-align: left;
-  max-width: 600px;
-  padding: 40px;
+  background-image: url(xbox-pass.jpg);
+  margin-top: 300px;
+  height: 1080px;
+  width: 1920px;
 }
 
 .content h1 {
+  color: #8cd800;
   font-size: 3rem;
   font-weight: bold;
   margin-bottom: 20px;
@@ -221,22 +210,17 @@ body {
 }
 
 .content p {
+  color: #b8d484;
   font-size: 1.2rem;
   margin-bottom: 30px;
 }
 
 .btn {
-  background-color: #a4ff00;
-  color: #000;
-  padding: 12px 25px;
-  text-decoration: none;
-  font-weight: bold;
-  border-radius: 3px;
-  transition: background 0.3s ease;
+  color: #ffffff;
 }
 
 .btn:hover {
-  background-color: #8cd800;
+  color: #ffffff;
 }
 .gamepass{
   width: 100%;
