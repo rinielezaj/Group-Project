@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlayPulse - Next-Gen Gaming Hub</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="components/navbar.js"></script>
+    <script src="components/footer.js"></script>
+    <script src="components/game-card.js"></script>
+</head>
+<body class="bg-gray-900 text-white">
+    <custom-navbar></custom-navbar>
+
+    <!-- Hero Section -->
+    <section class="relative h-screen flex items-center justify-center bg-gradient-to-b from-blue-900 to-gray-900 overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src="http://static.photos/gaming/1200x630/5" alt="Gaming Hero" class="w-full h-full object-cover opacity-30">
+        </div>
+        <div class="container mx-auto px-6 z-10 text-center">
+            <h1 class="text-5xl md:text-7xl font-bold mb-6">Experience Next-Gen Gaming</h1>
+            <p class="text-xl md:text-2xl mb-8 max-w-2xl mx-auto">Discover the latest games, exclusive content, and join millions of players worldwide.</p>
+            <div class="flex justify-center gap-4">
+                <a href="#" class="bg-blue-600 hover:bg-blue-700 px-8 py-3 rounded-full font-semibold transition-all">Explore Games</a>
+                <a href="#" class="border-2 border-white hover:bg-white hover:text-gray-900 px-8 py-3 rounded-full font-semibold transition-all">Join Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Games -->
+    <section class="py-16 bg-gray-900">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-12 text-center">Featured Games</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <custom-game-card 
+                    title="Horizon Forbidden West" 
+                    price="59.99" 
+                    image="http://static.photos/gaming/640x360/1"
+                    rating="4.8">
+                </custom-game-card>
+                <custom-game-card 
+                    title="God of War Ragnarök" 
+                    price="69.99" 
+                    image="http://static.photos/gaming/640x360/2"
+                    rating="4.9">
+                </custom-game-card>
+                <custom-game-card 
+                    title="Spider-Man 2" 
+                    price="69.99" 
+                    image="http://static.photos/gaming/640x360/3"
+                    rating="4.7">
+                </custom-game-card>
+            </div>
+        </div>
+    </section>
+
+    <!-- PS Plus Section -->
+    <section class="py-16 bg-gradient-to-r from-blue-900 to-purple-900">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-1/2">
+                    <h2 class="text-3xl font-bold mb-6">PlayStation Plus</h2>
+                    <p class="text-lg mb-6">Get access to online multiplayer, monthly games, exclusive discounts and more with PlayStation Plus.</p>
+                    <div class="flex flex-wrap gap-4">
+                        <div class="bg-white bg-opacity-10 p-4 rounded-lg">
+                            <h3 class="font-bold mb-2">Essential</h3>
+                            <p class="text-sm">$9.99/month</p>
+                        </div>
+                        <div class="bg-white bg-opacity-10 p-4 rounded-lg">
+                            <h3 class="font-bold mb-2">Extra</h3>
+                            <p class="text-sm">$14.99/month</p>
+                        </div>
+                        <div class="bg-white bg-opacity-10 p-4 rounded-lg">
+                            <h3 class="font-bold mb-2">Premium</h3>
+                            <p class="text-sm">$17.99/month</p>
+                        </div>
+                    </div>
+                    <a href="#" class="inline-block mt-6 bg-white text-gray-900 px-6 py-3 rounded-full font-semibold hover:bg-gray-200 transition-all">Learn More</a>
+                </div>
+                <div class="md:w-1/2">
+                    <img src="http://static.photos/technology/640x360/10" alt="PlayStation Plus" class="rounded-lg shadow-2xl">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- News Section -->
+    <section class="py-16 bg-gray-800">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-12 text-center">Latest News</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-gray-700 rounded-lg overflow-hidden hover:shadow-lg transition-all">
+                    <img src="http://static.photos/gaming/640x360/7" alt="News" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <span class="text-blue-400 text-sm">Update</span>
+                        <h3 class="text-xl font-bold my-2">New System Software Update</h3>
+                        <p class="text-gray-300">The latest PS5 system update brings new features and improvements.</p>
+                        <a href="#" class="text-blue-400 inline-block mt-4 hover:underline">Read more</a>
+                    </div>
+                </div>
+                <div class="bg-gray-700 rounded-lg overflow-hidden hover:shadow-lg transition-all">
+                    <img src="http://static.photos/gaming/640x360/8" alt="News" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <span class="text-blue-400 text-sm">Announcement</span>
+                        <h3 class="text-xl font-bold my-2">Upcoming Game Releases</h3>
+                        <p class="text-gray-300">Check out the most anticipated games coming this year.</p>
+                        <a href="#" class="text-blue-400 inline-block mt-4 hover:underline">Read more</a>
+                    </div>
+                </div>
+                <div class="bg-gray-700 rounded-lg overflow-hidden hover:shadow-lg transition-all">
+                    <img src="http://static.photos/gaming/640x360/9" alt="News" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <span class="text-blue-400 text-sm">Event</span>
+                        <h3 class="text-xl font-bold my-2">PlayStation Showcase 2023</h3>
+                        <p class="text-gray-300">Watch the replay of our latest showcase event.</p>
+                        <a href="#" class="text-blue-400 inline-block mt-4 hover:underline">Read more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <custom-footer></custom-footer>
+
+    <script src="script.js"></script>
+    <script>
+        feather.replace();
+    </script>
+</body>
+</html>
